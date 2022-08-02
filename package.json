@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@faker-js/faker": "^7.3.0",
+    "json-server": "^0.17.0",
+    "lodash": "^4.17.21"
+  },
+  "scripts": {
+    "gen" : "json-server ./db/generate.js"
+  }
+}
