@@ -1,5 +1,9 @@
-This is a simple Api that generates a set of fake Art works with the following schema:
+# A Faker API
+You can do two things with this project:
+* Run a very simple API using `json-server`.
+* Generate a set of "Fake art works".
 
+The json you'll get has the following schema:
 ```json
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
@@ -67,12 +71,12 @@ This is a simple Api that generates a set of fake Art works with the following s
   ]
 }
 ```
-
-## Install Packages
-
+## To use this project
+1. Install Packages:
 ```
-npm install json-server lodash @faker-js/faker
+npm install
 ```
+2. 
 
 ## Create a generate.js file
 
