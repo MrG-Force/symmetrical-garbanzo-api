@@ -1,7 +1,7 @@
 # A Faker API
 You can run two types of server:
 * One with freshly generated random fake art data. This will run a virtual json database that will last for the life of the server.
-* Other using a prebuilt data set. This option runs from a file and pesrist the state of the data.
+* Other using a prebuilt data set. This option runs from a file and persist the state of the data.
 
 The json you'll get has the following schema:
 ```json
