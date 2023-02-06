@@ -5,6 +5,7 @@
     "lodash": "^4.17.21"
   },
   "scripts": {
-    "gen" : "json-server ./db/generate.js"
+    "gen" : "json-server ./db/generate.js",
+    "art-db": "npx json-server --watch ./db/art.json"
   }
 }
