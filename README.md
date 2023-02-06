@@ -1,7 +1,7 @@
 # A Faker API
-You can do two things with this project:
-* Run a very simple API using `json-server`.
-* Generate a set of "Fake art works".
+You can run two types of server:
+* One with freshly generated random fake art data. This will run a virtual json database that will last for the life of the server.
+* Other using a prebuilt data set. This option runs from a file and pesrist the state of the data.
 
 The json you'll get has the following schema:
 ```json
@@ -76,29 +76,12 @@ The json you'll get has the following schema:
 ```
 npm install
 ```
-2. 
-
-## Create a generate.js file
-
-To properly arrange things, create a folder in the root directory of your project where you will store the generate.js.
-
-## Edit package.json
-
-Add a little script to run the server nicely, your package.json should look like this:
-
-```json
-{
-  "dependencies": {
-    "@faker-js/faker": "^7.3.0",
-    "json-server": "^0.17.0",
-    "lodash": "^4.17.21"
-  },
-  "scripts": {
-    "gen": "json-server ./db/generate.js"
-  }
-}
+2. Run a server connected to a database prefilled with 30 random objects:
 ```
-
-## Run Forrest, run!
-
-`npm run gen`
+npm run generate
+```
+3. Alternatively, to run a server using the prebuilt `art.json` file as your database, run:
+```
+npm run art-db
+```
+Both options will run servers in your localhost (default is 3000) that you can send http requests to.
